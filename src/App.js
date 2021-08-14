@@ -1,20 +1,19 @@
-import "./App.css";
-import Simpson from "./Components/Simpson/simpson";
+
 
 
 export default function App(){
     return(
-        <div className='simpson'>
-            <Simpson name = {'Bart'} surname = {'Simpson'} age = { 10} info = {'Бартоломeo ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.'} photo =  {'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'}/>
-            <Simpson name = {'Homer'} surname = {'Simpson'} age = {40} info = {'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.'} photo = {'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'}/>
-            <Simpson name = {'Marge'} surname = {'Simpson'} age = {38} info = {'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.'} photo={ 'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'}/>
-            <Simpson name={'Lisa'}  surname={'Simpson'} age={ 9} info={'Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.'} photo={ 'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'}/>
-            <Simpson name={ 'Maggie'} surname={ 'Simpson'} age={ 1} info={'Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.'} photo={'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'}/>
-        </div>
+        <div className='User'>
+            <User name = {'Leanne Graham'} username = {'Bret'} id = { 1} email={'Sincere@april.biz'}  address:street={'Kulas Light'} address:suite={'Apt. 556'} address:city={'Gwenborough'} address:zipcode={'92998-3874'} geo:lat={'-37.3159'} geo:lng={'81.1496'}/>
+            <User name = {'Ervin Howell'} username = {'Antonette'} id = { 2} email={'Shanna@melissa.tv'}  address:street={'Victor Plains'} address:suite={'Suite 879'} address:city={'Wisokyburgh'} address:zipcode={'90566-7771'} geo:lat={'-43.9509'} geo:lng={'-34.4618'}/>
+            <User name = {'Clementine Bauch'} username = {'Samantha'} id = { 3} email={'Nathan@yesenia.net'}  address:street={'Douglas Extension'} address:suite={'Suite 847'} address:city={'McKenziehaven'} address:zipcode={'59590-4157'} geo:lat={'-68.6102'} geo:lng={'-47.0653'}/>
+            <User name = {'Patricia Lebsack'} username = {'Karianne'} id = { 4} email={'Julianne.OConner@kory.org'}  address:street={'Hoeger Mall'} address:suite={'Apt. 692'} address:city={'South Elvis'} address:zipcode={'53919-4257'} geo:lat={'29.4572'} geo:lng={'-164.2990'}/>
+            <User name = {'Chelsey Dietrich'} username = {'Kamren'} id = { 5} email={'Lucio_Hettinger@annie.ca'}  address:street={'Skiles Walks'} address:suite={'Suite 351'} address:city={'Roscoeview'} address:zipcode={'33263'} geo:lat={'-31.8129'} geo:lng={'62.5342'}/>
+            <User name = {'Mrs. Dennis Schulist'} username = {'Leopoldo_Corkery'} id = { 6} email={'Karley_Dach@jasper.info'}  address:street={'Norberto Crossing'} address:suite={'Apt. 950'} address:city={'South Christy'} address:zipcode={'23505-1337'} geo:lat={'-71.4197'} geo:lng={'71.7478'}/>
+            <User name = {'Kurtis Weissnat'} username = {'Elwyn.Skiles'} id = { 7} email={'Telly.Hoeger@billy.biz'}  address:street={'Rex Trail'} address:suite={'Suite 280'} address:city={'Howemouth'} address:zipcode={'58804-1099'} geo:lat={'24.8918'} geo:lng={'21.8984'}/>
+            <User name = {'Nicholas Runolfsdottir V'} username = {'Maxime_Nienow'} id = { 8} email={'Sherwood@rosamond.me'}  address:street={'Ellsworth Summit'} address:suite={'Suite 729'} address:city={'Aliyaview'} address:zipcode={'45169'} geo:lat={'-14.3990'} geo:lng={'-120.7677'}/>
+            <User name = {'Glenna Reichert'} username = {'Delphine'} id = { 9} email={'Chaim_McDermott@dana.io'}  address:street={'Dayna Park'} address:suite={'Suite 449'} address:city={'Bartholomebury'} address:zipcode={'76495-3109'} geo:lat={'24.6463'} geo:lng={'-168.8889'}/>
+            <User name = {'Clementina DuBuque'} username = {'Moriah.Stanton'} id = { 10} email={'Rey.Padberg@karina.biz'}  address:street={'Kattie Turnpike'} address:suite={'Suite 198'} address:city={'Lebsackbury'} address:zipcode={'31428-2261'} geo:lat={'-38.2386'} geo:lng={'57.2232'}/>
+            </div>
     );
 }
-
-
-
-
-
