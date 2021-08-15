@@ -9,4 +9,6 @@ const getPostsOfUser = (id) => {
     return fetch(url + '/' + id + '/posts')
         .then(value => value.json())
 }
+
+
 export {getUsers,getPostsOfUser};

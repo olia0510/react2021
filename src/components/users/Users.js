@@ -7,11 +7,17 @@ export default function Users() {
 
     let [users, setUsers] = useState([]);
     let [user, setUser] = useState(null);
+    // let [posts, setPosts] = useState(null);
+
     useEffect(()=>{
 
         getUsers().then(value => setUsers([...value]))
     },[]);
-
+    //
+    // const posts = (p) => {
+    //     setPosts({...p});
+    //
+    // }
     const choseUser = (u) => {
         setUser({...u});
 
@@ -27,6 +33,7 @@ export default function Users() {
                           key={value.id}
                           item={value}
                           choseUser={choseUser}
+                          posts={posts}
                        />
                    )
                }
