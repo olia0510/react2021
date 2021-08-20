@@ -2,22 +2,18 @@ import './Users.css'
 import {useEffect, useState} from "react";
 import {getPostsOfUser, getUsers} from "../../services/User.fetch.service";
 import User from '../user/User'
+import PostsOfUser from "../postsOfUser/PostsOfUser";
 
 export default function Users() {
 
     let [users, setUsers] = useState([]);
     let [user, setUser] = useState(null);
-    // let [posts, setPosts] = useState(null);
 
     useEffect(()=>{
 
         getUsers().then(value => setUsers([...value]))
     },[]);
-    //
-    // const posts = (p) => {
-    //     setPosts({...p});
-    //
-    // }
+
     const choseUser = (u) => {
         setUser({...u});
 
@@ -33,14 +29,16 @@ export default function Users() {
                           key={value.id}
                           item={value}
                           choseUser={choseUser}
-                          posts={posts}
                        />
                    )
                }
            </div>
 
 
-            <div className={'chosen-one'}>{JSON.stringify(user)}</div>
+            {user && <div className={'chosen-one'}>
+                <h4>{user.id}.{user.name}</h4>
+                <PostsOfUser id={user.id}/>
+            </div>}
         </div>
     )
 }
