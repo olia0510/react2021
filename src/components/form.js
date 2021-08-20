@@ -4,6 +4,7 @@ import {saveCars} from "../services/CarsApiServices";
     export default function form() {
 
         let onFormSubmit = (c) => {
+            o.preventDefault();
             console.log('form submit');
             console.log(o.target.id.value);
             console.log(o.target.model.value);
@@ -14,7 +15,13 @@ import {saveCars} from "../services/CarsApiServices";
             saveCars(carToSave)
       return (
         <div>
-
+            <form onSubmit={onFormSubmit}>
+                <input type={'number'} name={'id'} pleceholder={'id'}/>
+                <input type={'model'} name={'model'} pleceholder={'model'}/>
+                <input type={'price'} name={'price'} pleceholder={'price'}/>
+                <input type={'year'} name={'year'} pleceholder={'year'}/>
+                <button>save</button>
+            </form>
 
         </div>
       );
