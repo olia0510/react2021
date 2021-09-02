@@ -1,13 +1,12 @@
-import './App.css'
+import './App.css';
+import CarForm from "./components/forms/Forms";
 
-// import Form from "./components/Form"
-import SuperForm from "./components/SuperForm";
-
-export default function App() {
-  return (
-    <div>
-    {/*<Form/>*/}
-    <SuperForm/>
-    </div>
-  );
+function App() {
+    return (
+        <div>
+            <CarForm/>
+        </div>
+    );
 }
+
+export default App;
